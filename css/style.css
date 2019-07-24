@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Arvo:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #130f36;
+}
+
+header {
+    background-color: #FFF;
+    color: #130f40;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Arvo', serif;
+}
+
+.score-board {
+    border: solid 3px #FFF;
+    border-radius: 4px;
+    margin: 20px auto;
+    width: 200px;
+    font-size: 46px;
+    color: #FFF;
+    text-align: center;
+    padding: 15px 20px;
+    font-family: 'Arvo', serif;
+    position: relative;
+}
+
+.badge {
+    background-color: #E2584D;
+    color: #FFF;
+    font-size: 14px;
+    padding: 3px 10px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#user-label {
+    position: absolute;
+    top: 30px;
+    left: -25px;
+}
+
+#computer-label {
+    position: absolute;
+    top: 30px;
+    right: -33px;
+}
+
+.result {
+    color: #FFF;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+}
+
+.choices {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.choice {
+    display: inline-block;
+    border: solid 4px #FFF;
+    border-radius: 50%;
+    padding: 7px 10px;
+    margin: 0 20px;
+    transition: all 0.3s ease;
+}
+
+.choice:hover {
+    background-color: #130f40;
+    cursor: pointer;
+}
+
+.choice img:hover {
+    animation: animate 0.3s 3;
+}
+
+.action-message {
+    color: #E2584D;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.green-glow {
+    border: solid 4px #4dcc7d;
+    box-shadow: 0 0 10px 3px #31b43a;
+}
+
+.red-glow {
+    border: solid 4px #fc121b;
+    box-shadow: 0 0 10px 3px #d01115;
+}
+
+.gray-glow {
+    border: solid 4px #464647;
+    box-shadow: 0 0 10px 3px #25292b;
+} 
+
+@keyframes animate {
+    0% {
+        transform: translate(0, 10%);
+    }
+}
